@@ -1,5 +1,7 @@
 package empleados;
 
+import main.Bienvenida;
+
 /**
  * 
  * Una clase para guardar los empleados de la empresa. 
@@ -8,9 +10,17 @@ package empleados;
  * @author Rubèn Nieto
  *
  */
-public class Empleado {
+public class Empleado implements Bienvenida {
 	private String nombre, DNI;
 	private Double sueldo = 0.0;
+	
+	
+	/**
+	 * Saluda al empleado
+	 */
+	public void Saludo() {
+		System.out.println("Hola, empleado " + this.getNombre());
+	}
 	
 	/**
 	 * Obtener nombre.

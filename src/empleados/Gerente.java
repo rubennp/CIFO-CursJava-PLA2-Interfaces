@@ -1,5 +1,7 @@
 package empleados;
 
+import main.Bienvenida;
+
 /**
  * 
  * Extiende la clase Administracion.
@@ -7,9 +9,16 @@ package empleados;
  * @author Rubèn Nieto
  *
  */
-public class Gerente extends Administracion {
+public class Gerente extends Administracion implements Bienvenida {
 	private String departamento = "Nuevo Departamento";
 	private int dietas = 0;
+	
+	/**
+	 * Saluda al gerente.
+	 */
+	public void Saludo() {
+		System.out.println("Hola, gerente " + this.getNombre());
+	}
 	
 	/**
 	 * Constructor de clase.

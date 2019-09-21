@@ -2,10 +2,12 @@ package main;
 
 import java.util.ArrayList;
 import empleados.*;
+import clientes.Clientes;
+
 
 /**
  * 
- * Programa para probar la clase Empleado y sus extensiones (Administracion, Gerente y Direccion).
+ * Programa para probar la clase Empleado y sus extensiones (Administracion, Gerente y Direccion) así como la implementación de la clase Bienvenida.
  * 
  * @author Rubèn Nieto
  *
@@ -48,7 +50,7 @@ public class Program {
 		seis.setSeccion("Compras");				// Hereda de Administracion
 		seis.setDepartamento("Europa");			// Hereda de Gerente
 		seis.setDietas(1000);					// Hereda de Gerente
-		seis.setStockOptions(5000);				// De la propia clase
+		seis.setStockOptions(500000);				// De la propia clase
 		
 		ArrayList<Direccion> directores = new ArrayList<Direccion>();
 		directores.add(seis);
@@ -86,5 +88,16 @@ public class Program {
 			System.out.println("|- Stock Options: " + director.getStockOptions());
 			System.out.println("|- Sueldo: " + director.getSueldo() + " (Neto : " + director.sueldoNeto() + ")\n");	
 		}
+		
+		Clientes cliente = new Clientes();
+		cliente.setNombre("Cliente1");
+		
+		cliente.Saludo();
+		uno.Saludo();
+		dos.Saludo();
+		tres.Saludo();
+		cuatro.Saludo();
+		cinco.Saludo();
+		seis.Saludo();
 	}
 }
