@@ -1,4 +1,4 @@
-package main;
+package empleados;
 
 /**
  * 
@@ -10,7 +10,7 @@ package main;
  */
 public class Empleado {
 	private String nombre, DNI;
-	private Double sueldo;
+	private Double sueldo = 0.0;
 	
 	/**
 	 * Obtener nombre.
