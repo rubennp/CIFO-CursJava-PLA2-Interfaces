@@ -54,9 +54,10 @@ public class Gerente extends Administracion {
 	}
 	
 	/**
-	 * Obtener el sueldo neto (+ dietas) del empleado
+	 * Obtener el sueldo neto (+ dietas) del empleado.
 	 * @return el sueldo neto más las dietas.
 	 */
+	@Override
 	public Double sueldoNeto() {
 		return super.sueldoNeto()+dietas;
 	}

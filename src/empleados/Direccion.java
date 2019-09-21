@@ -37,10 +37,10 @@ public class Direccion extends Gerente {
 	}
 	
 	/**
-	 * Modifica Empleado.sueldoNeto para incluir valor de las Stock Options.
+	 * Modifica Gerente.sueldoNeto para incluir valor de las Stock Options.
 	 * @return el sueldo neto + el valor de las Stock Options multiplicado por 0,1.
 	 */
-//	@Override
+	@Override
 	public Double sueldoNeto() {
 		return super.sueldoNeto()+(stockOptions*.1);
 	}
